@@ -1,0 +1,30 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #1e1f23;
+  color: #77787c;
+  border-right: 1px solid rgba(188, 184, 184, 0.2);
+  width: 200px;
+  height: 100%;
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    padding: 16px 8px;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #26272e;
+      color: #3c7fd7;
+
+      .icon {
+        fill: #3c7fd7;
+      }
+    }
+  }
+}
