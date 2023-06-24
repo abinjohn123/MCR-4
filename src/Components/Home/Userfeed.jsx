@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 import { useAppContext } from '../../../AppContext';
 
 import {
@@ -17,7 +18,6 @@ const Userdetails = ({ details }) => {
     month: 'long',
     year: 'numeric',
   }).format(new Date(createdAt));
-  console.log(formattedDate);
   return (
     <div className="post-header">
       <img className="profile-icon" src={picUrl} alt={username} />
@@ -82,7 +82,7 @@ const PostVotes = ({ postId, upvotes, downvotes }) => {
 
 const Pill = ({ pill }) => <div className="pill">{pill}</div>;
 
-const Post = ({ item }) => {
+export const Post = ({ item }) => {
   const { setData } = useAppContext();
   const {
     postId,
@@ -93,6 +93,8 @@ const Post = ({ item }) => {
     upvotes,
     downvotes,
   } = item;
+
+  const navigate = useNavigate();
 
   const handleBookmarkClick = () =>
     setData((data) => ({
@@ -119,7 +121,9 @@ const Post = ({ item }) => {
           <p className="post-desc">{postDescription}</p>
         </div>
         <div className="post-actions">
-          <CommentIcon />
+          <div onClick={() => navigate(`/posts/${postId}`)}>
+            <CommentIcon />
+          </div>
           <ShareIcon />
           <div onClick={handleBookmarkClick}>
             <BookmarkIcon className={isBookmarked ? `filled` : ''} />

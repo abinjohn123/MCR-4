@@ -24,6 +24,7 @@ export const forumData = {
           likes: 0,
           comment: 'Interested',
           createdAt: '2023-06-24T12:01:00Z',
+          name: 'Ashwin Khode',
         },
       ],
       isBookmarked: false,
