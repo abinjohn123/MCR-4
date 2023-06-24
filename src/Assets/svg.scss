@@ -1,6 +1,10 @@
 .icon {
   height: 20px;
   width: 20px;
-
   fill: #77787c;
+  transition: fill 0.2s;
+
+  &.filled {
+    fill: #3c7fd7;
+  }
 }

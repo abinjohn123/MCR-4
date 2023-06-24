@@ -1,6 +1,6 @@
 import './svg.scss';
 
-export const HomeIcon = ({ className }) => (
+export const HomeIcon = ({ className = '' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -12,7 +12,7 @@ export const HomeIcon = ({ className }) => (
   </svg>
 );
 
-export const ExploreIcon = ({ className }) => (
+export const ExploreIcon = ({ className = '' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ export const ExploreIcon = ({ className }) => (
   </svg>
 );
 
-export const BookmarkIcon = ({ className }) => (
+export const BookmarkIcon = ({ className = '' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ export const BookmarkIcon = ({ className }) => (
   </svg>
 );
 
-export const ProfileIcon = ({ className }) => (
+export const ProfileIcon = ({ className = '' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -53,6 +53,36 @@ export const ProfileIcon = ({ className }) => (
     <path
       fillRule="evenodd"
       d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
+export const CommentIcon = ({ className = '' }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={`icon ${className}`}
+  >
+    <path
+      fillRule="evenodd"
+      d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+      clilRule="evenodd"
+    />
+  </svg>
+);
+
+export const ShareIcon = ({ className = '' }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={`icon ${className}`}
+  >
+    <path
+      fillRule="evenodd"
+      d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
       clipRule="evenodd"
     />
   </svg>
