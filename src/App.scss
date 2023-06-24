@@ -1,5 +1,12 @@
+.app-header {
+  padding: 8px;
+  grid-column: 1/-1;
+  border-bottom: 1px solid rgba(188, 184, 184, 0.2);
+}
+
 .layout {
   display: grid;
   grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
   height: 100%;
 }
