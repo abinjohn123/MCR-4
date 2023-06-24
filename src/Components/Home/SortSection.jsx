@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { useAppContext } from '../../../AppContext';
 
 export const SortSection = () => {
@@ -23,6 +25,8 @@ export const SortSection = () => {
         }),
       }));
   };
+
+  useEffect(() => handleSortChange({ target: { value: 'latest' } }), []);
   return (
     <div className="controls">
       <h3>Sort by</h3>
