@@ -1,0 +1,103 @@
+.user-feed {
+  flex-basis: 500px;
+  padding: 16px;
+
+  h3 {
+    margin-bottom: 16px;
+  }
+}
+
+.post {
+  background-color: #1e1f23;
+  border: 1px solid rgba(188, 184, 184, 0.2);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+
+  display: flex;
+  gap: 16px;
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .profile-icon {
+      height: 32px;
+      width: 32px;
+      border-radius: 1000px;
+    }
+    .username {
+      color: #3c7fd7;
+      cursor: pointer;
+    }
+  }
+
+  .post-votes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    .vote-btn {
+      cursor: pointer;
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+      user-select: none;
+
+      svg {
+        height: 32px;
+        width: 32px;
+        fill: none;
+      }
+
+      &:hover,
+      &.voted {
+        background-color: #334867;
+      }
+    }
+  }
+
+  .post-details {
+    .post-title {
+      margin-bottom: 8px;
+    }
+    .post-pills {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+      .pill {
+        font-size: 1.2rem;
+        background-color: #334867;
+        padding: 4px 6px;
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .post-desc {
+      line-height: 0.6cm;
+      margin-bottom: 16px;
+    }
+  }
+
+  .post-actions {
+    border-top: 1px solid rgba(188, 184, 184, 0.2);
+    padding: 8px 2px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+
+      &:hover {
+        fill: #3c7fd7;
+      }
+    }
+  }
+}

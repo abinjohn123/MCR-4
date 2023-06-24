@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Navbar from './Components/Navbar';
 import Sidebar from './Components/Sidebar';
+import Homepage from './Components/Home';
 import './App.scss';
 
 function App() {
@@ -9,9 +10,7 @@ function App() {
     <div className="layout">
       <Navbar />
       <Sidebar />
-      <div>
-        <p>App comes here</p>
-      </div>
+      <Homepage />
     </div>
   );
 }
