@@ -11,12 +11,20 @@ import {
 
 const Userdetails = ({ details }) => {
   const { username, picUrl, createdAt } = details;
+  const formattedDate = new Intl.DateTimeFormat('en-Us', {
+    hour: 'numeric',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(new Date(createdAt));
+  console.log(formattedDate);
   return (
     <div className="post-header">
       <img className="profile-icon" src={picUrl} alt={username} />
       <p>
         Posted by <span className="username">@{username}</span>
       </p>
+      ·<span className="post-date">{formattedDate}</span>
     </div>
   );
 };

@@ -4,7 +4,7 @@
 }
 
 .user-feed {
-  flex-basis: 500px;
+  flex-basis: 600px;
   padding: 16px;
 
   h3 {
@@ -35,6 +35,9 @@
     .username {
       color: #3c7fd7;
       cursor: pointer;
+    }
+    .post-date {
+      font-size: 1.2rem;
     }
   }
 
